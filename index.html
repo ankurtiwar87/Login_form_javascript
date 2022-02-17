@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+   
+  
+    <form action="#"name="myform" onsubmit="return validateForm()" >
+        <h2>LOGIN PAGE</h2>
+        <div class="contain" >
+            Name: <input type="text"id="name" name="name">
+        </div>  <span class="error"><p id="name_error"></p></span>
+        <div class="contain" >
+            Address: <input type="text" id="address" name="email">
+        </div>  <span class="error"><p id="address_error"></p></span>
+        <div class="contain" >
+            Phone: <input type="text"id="phone" name="phone">
+        </div>  <span class="error"><p id="phone_error"></p></span>
+        <div class="contain" >
+            Age: <input type="number"id="age" name="password">
+        </div>  <span class="error"><p id="age_error"></p></span>
+        <input class="btn" onclick="data_save()" type="submit" value="submit">
+    
+
+    </form>
+    <br>
+    <br>
+    <div class="foot">
+    <!-- <a href="profile.html" target="_blank" onclick="fetch_data()"><button class ="btn2">Profile</button></a> -->
+    <h3>This is the details of the values saved in the local storage <br> Now,Click on the below button to access it.
+    </h3>
+     <input class="btn" onclick="fetch_data()" type="submit" value="profile">
+     <span class="profile"><p id="profile_name">* Name:</p></span>
+     <span class="profile"><p id="profile_address">* Address:</p></span>
+     <span class="profile"><p id="profile_phone">* phone:</p></span>
+     <span class="profile"><p id="profile_age">* Age:</p></span>
+    </div>
+
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
